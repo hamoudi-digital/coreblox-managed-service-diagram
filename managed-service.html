@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CoreBlox - Managed Service General</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link href="https://fonts.cdnfonts.com/s/38053/LUCIDAG.woff" rel="stylesheet">
+
+		<style type="text/css">
+			/* STYLES FOR DIAGRAM */
+			.service-diagram p, .service-diagram h4 {
+				font-family: 'Lucida Grande', sans-serif;
+				font-size: 12px;
+				font-weight: 400;
+				color: #2A569F;
+			}
+			.service-diagram h4  {
+				font-weight: 800;
+			}
+
+			/* STYLES FOR CONTAINERS AND CONTENT */
+			.services-container {
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: space-between;
+				height: 100%;
+				padding: 20px;
+			}
+			.services-container.image {
+				max-height: 500px;
+			}
+			.services-container.image img {
+				max-height: 100%;
+				max-width: 100%;
+				object-fit: contain;
+			}
+			.services-container:not(.image) {
+				padding-top: 30px;
+			}
+			.services-container.content-left {
+				padding-bottom: 0;
+				text-align: left;
+			}
+			.services-container.content-right{
+				padding-top: 0;
+			}
+
+			/* STYLES FOR RESPONSIVENESS */
+			@media(min-width: 991px) {
+				.services-container.content-left, .services-container.content-right {
+					text-align: left;
+				}
+				.services-container.content-left {
+					text-align: right;
+				}
+			}
+			@media(min-width: 1400px) {
+				.services-container.image {
+					max-height: 800px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Diagram -->
+		<div class="service-diagram">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 order-lg-1">
+						<div class="services-container image">
+							<img src="./assets/managed-service-general.svg">
+						</div>
+					</div>
+					<div class="col-lg-3 order-lg-0">
+						<div class="services-container content-left">
+							<div class="top">
+								<h4>ADMINISTRATION</h4>
+								<p>CoreBlox collaborates with your team to establish and execute daily, weekly, monthly, and quarterly administrative tasks for your environment.</p>
+							</div>
+							<div class="bottom">
+								<h4>MONITORING</h4>
+								<p>Our proactive 24x7x365 monitoring process detects minor issues before they impact users, enabling you to meet or exceed your end users’ performance targets.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 order-lg-2">
+						<div class="services-container content-right">
+							<div class="top">
+								<h4>PERFORMANCE TUNING</h4>
+								<p>As the foundation for your Identity infrastructure, it is imperative to have your IAM Solution operating at its optimal state of performance. Run & Operate by CoreBlox is built upon years of experience tuning and tweaking performance in some of the world’s most demanding infrastructures. </p>
+							</div>
+							<div class="bottom">
+								<h4>ONBOARDING & EXPANSION</h4>
+								<p>CoreBlox can establish a regular cadence with your business and application teams to drive the continued expansion of your IAM Solution environment. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+
